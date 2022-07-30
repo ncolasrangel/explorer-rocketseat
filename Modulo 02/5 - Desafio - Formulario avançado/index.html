@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalie a sua mentoria</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+
+        <header>
+            <h1>avalie a sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+    
+            <img src="images/img.svg" alt="Logo">
+    
+            <section>
+                <h2>Informações pessoais</h2>
+            </section>
+        </header>
+
+        <form action="#">
+            <fieldset>
+                <div class="column-1">
+                   <div class="input-wrapper">
+                        <label for="event-name">Nome</label>
+                        <input type="text" id="event-name">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="event-last-name">Sobrenome</label>
+                        <input type="text" id="event-last-name">
+                    </div> 
+                </div>
+                
+
+                <div class="input-wrapper">
+                    <label for="event-email">Email<span>(digite um email válido)</span></label>
+                    <input type="email" id="event-email">
+                </div>
+            </fieldset>
+
+            <fieldset class="space-field">
+                <legend>Informações do mentor</legend>
+                <div class="column-2">
+                    <div class="input-wrapper">
+                        <label for="event-name-mentor">Selecione quem foi o seu mentor</label>
+                        <input type="text" id="event-name-mentor">
+                    </div>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="event-feedback">Feedback sobre o mentor</label>
+                    <textarea id="event-feedback"></textarea>
+                </div>
+
+                <div class="input-check">
+                    <input type="checkbox" id="event-check">
+                    <label for="event-check">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Agendando próxima mentoria</legend>
+
+                <div class="column-3">
+                    <div class="input-wrapper">
+                        <label for="event-date">Data<span>(DD/MM/AAAA)</span></label>
+                        <input type="date" id="event-last-name">
+                    </div> 
+    
+                    <div class="input-wrapper">
+                        <label for="event-fist-date">Das</label>
+                        <input type="date" id="event-fist-date">
+                    </div> 
+                    
+                    <div class="input-wrapper">
+                        <label for="event-after-date">Até</label>
+                        <input type="date" id="event-after-date">
+                    </div>       
+                </div>
+            </fieldset>
+
+            <input type="submit" id="save" value="salvar">
+        </form>
+
+        <footer>
+            <p>Desafio feito por <a href="https://github.com/ncolasrangel">Nícolas Rangel</a> durante o stage 3 do Explorer</p>
+        </footer>
+
+    </div>
+</body>
+</html>
